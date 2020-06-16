@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aplicaciones.blog',
     'import_export',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -106,7 +107,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+# ckeditor config
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
